@@ -1,0 +1,480 @@
+/*META*/
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+.body-style {
+    background-color: #f3e7e4;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*FIN META*/
+/*HEADER*/
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    display: flex;
+}
+.main-header__index {
+    background-color: #FEC89A;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-header {
+    background-color: #FEC89A;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-header__view {
+    background-color: #FEC89A;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.main-header__logo {
+    height: 9.3em;
+    width: 9.3em;
+}
+.header-nav {
+    display: flex;
+    width: 65vw;
+    justify-content: space-between;
+    height: 9.3rem;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 0.7rem;
+}
+.main-logo__title {
+    display: flex;
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links-item__shop {
+    margin:0 7px;
+}
+.shop-links {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    margin-left: 8.9em;
+}
+#about-us__style {
+    display: flex;
+    align-items: center;
+}
+.header-nav .shop-links li {
+    border-style:solid;
+}
+.header-nav .nav-links li {
+    border-style:solid;
+}
+.nav-end {
+    display: flex;
+}
+/*FIN HEADER*/
+.video-principal__propiedades {
+    height: 400px;
+    width: 100vw;
+}
+#shop-links__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". hombres mujeres ."
+    ". niños niños .";
+}
+.photos-kids {
+    grid-area: niños;
+    justify-self: center;
+}
+.photos-women{
+    grid-area: mujeres;
+}
+.photos-men {
+    grid-area: hombres;
+}
+#section-about-us {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 640px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". question ."
+    ". answer ."
+    ". aditional .";
+    gap: 15px;
+}
+.h2-question {
+    justify-self: center;
+    font-size: 50px;
+    grid-area: question;
+}
+.h2-answer {
+    font-size: 35px;
+    grid-area: answer;
+}
+.aditional-info {
+    font-size: 30px;
+    grid-area: aditional;
+}
+
+/*FOOTER*/
+.main-footer {
+    height: 15.3rem;
+    display: flex;
+    background-color: #FCD5CE;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-menu {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
+.footer-view {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.main-footer-view {
+    height: 15.3rem;
+    display: flex;
+    background-color: #FCD5CE;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*FIN FOOTER*/
+/*FORM CONTACT*/
+.form-help {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " comunicate "
+    " ul " ;
+    gap: 15px;
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+.form-help h1 {
+    grid-area: comunicate;
+    align-self: center;
+    justify-self: center;
+}
+.form-help ul {
+    grid-area: ul;
+    align-self: center;
+    justify-self: center;
+}
+.text-title {
+    font-size: 30px;
+}
+
+/*FIN FORM CONTACT*/
+/*FORM HELP*/
+.form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    " nombre nombre . "
+    " consulta consulta consulta "
+    " email-numero email-numero . "
+    " . boton . ";
+}   
+.nombre-apellido {
+    display: flex;
+    grid-area: nombre;
+    justify-content: center;
+}
+.consulta {
+    display: flex;
+    grid-area: consulta;
+    justify-content: center;
+}
+.email-numero {
+    display: flex;
+    grid-area: email-numero;
+    justify-content: center;
+    margin-left: 25px;
+}
+.form button {
+    display: flex;
+    grid-area: boton;
+    justify-content: center;
+}
+.form-consultas {
+    margin: 200px auto 200px auto;
+}
+.form-consultas h1 {
+    justify-content: center;
+}
+/*FIN FORM HELP*/
+/*FORM LOGIN*/
+.form-login {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". login ."
+    ". name ."
+    ". forgot ."
+    ". login-register .";
+}
+.login {
+    display: flex;
+    grid-area: login;
+    font-size: 40px;
+    justify-content: center;
+}
+.name {
+    display: grid;
+    grid-area: name;
+    justify-content: center;
+}
+.forgot {
+    display: grid;
+    grid-area: forgot;
+    justify-content: center;
+    text-decoration-line: underline;
+}
+.login-register {
+    display: grid;
+    grid-area: login-register;
+    justify-content: center;
+
+}
+/*FIN FORM LOGIN*/
+/*SHOPS*/
+
+.shop-scroll {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3,500px);
+    grid-template-areas: 
+    " . men . "
+    " . women . "
+    " . kids . ";
+    justify-content: center;
+}
+#men-section {
+    background-color: beige;
+    grid-area: men;
+}
+#kids-section {
+    background-color: red;
+    grid-area: kids;
+}
+#women-section {
+    grid-area: women;
+    background-color: aqua;
+}
+/*FIN SHOPS*/
+@media (max-width:1252px) {
+    .photo-size-h {
+        width: 40vw;
+    }
+    .photo-size-v {
+        width: 90vw;
+    }
+}
+@media (max-width:1065px) {
+    .header-nav {
+        justify-content: flex-end;
+    }
+}
+@media (max-width:801px) {
+    .main-logo__title {
+        justify-content: space-around;
+    }
+    .header-nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    .shop-links {
+        align-items: center;
+    }
+    .nav-links {
+        justify-content: flex-start;
+    }
+    .shop-links {
+        margin-left: 0;
+    }  
+    #section-about-us {
+        font-family: 'Roboto', sans-serif;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". question ."
+        ". answer ."
+        ". aditional .";
+        gap: 15px;
+    }
+    .h2-question {
+        justify-self: center;
+        font-size: 40px;
+        grid-area: question;
+    }
+    .h2-answer {
+        font-size: 25px;
+        grid-area: answer;
+    }
+    .aditional-info {
+        font-size: 20px;
+        grid-area: aditional;
+    }
+    .form {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        " nombre nombre "
+        " consulta consulta "
+        " email-numero email-numero "
+        " . boton ";
+    }   
+}
+@media (max-width:655px) {
+    .header-nav {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:641px) {
+    .header-nav {
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .main-logo__title {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:519px) {
+    .nav-end {
+        height: 15rem;
+    }
+    #section-about-us {
+        font-family: 'Roboto', sans-serif;
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". question ."
+        ". answer ."
+        ". aditional .";
+        gap: 15px;
+    }
+    .h2-question {
+        align-self: end;
+        justify-self: center;
+        font-size: 30px;
+        grid-area: question;
+    }
+    .h2-answer {
+        font-size: 25px;
+        grid-area: answer;
+    }
+    .aditional-info {
+        font-size: 20px;
+        grid-area: aditional;
+    }
+    .form-consultas h1 {
+        font-size: 30px;
+    }
+    .form-login {
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". login ."
+        ". name ."
+        ". forgot ."
+        ". login-register .";
+    }
+    .shop-scroll {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(3,300px);
+        grid-template-areas: 
+        " . men . "
+        " . women . "
+        " . kids . ";
+        justify-content: center;
+    }
+    .login p {
+        font-size: 20px;
+    }
+    .login {
+        width: 100vw;
+    }
+    .form-login form {
+        width: 100vw;
+    }
+    .form-login a {
+        width: 100vw;
+    }
+    .main-header {
+        padding: 0;
+    }
+}
+
+@media (max-width:400px) {
+    .main-logo__title {
+        width: 360px;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    .header-nav {
+    justify-content: center;
+    width: 254px;
+    height: 150px;
+    justify-items: center;
+    }
+    .nav-end {
+        width: 360px;
+    }
+    h1 .text-title {
+        font-size: 20px;
+    }
+    .form-help h1 {
+
+    }
+    .main-header__view {
+        padding: 1.5rem 0;
+    }
+}
+
