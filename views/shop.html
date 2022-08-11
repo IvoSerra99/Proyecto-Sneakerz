@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Compras</title>
 </head>
@@ -27,18 +28,18 @@
         </nav>
     </header> 
     <section class="shop-scroll">
-        <article id="men-section" class="shop-articles__modify">scroll hombre</article>
-        <article id="women-section" class="shop-articles__modify">scroll mujer</article>
-        <article id="kids-section" class="shop-articles__modify">scroll niños</article>
+        <article id="men-section" class="shop-articles__modify" data-aos="flip-up">scroll hombre</article>
+        <article id="women-section" class="shop-articles__modify" data-aos="flip-up">scroll mujer</article>
+        <article id="kids-section" class="shop-articles__modify" data-aos="flip-up">scroll niños</article>
     </section>
-    <footer class="main-footer-view">
+    <footer class="main-footer-view" data-aos="fade-up">
         <nav class="footer-view">
             <ul class="footer-menu">
                 <li class="footer-menu__item footer-contact">
-                    <a href="./views/contact.html">Contactános</a>
+                    <a href="./contact.html">Contactános</a>
                 </li>
                 <li class="footer-menu__item footer-login">
-                    <a href="./views/login.html">Iniciar Sesión</a>
+                    <a href="./login.html">Iniciar Sesión</a>
                 </li>
                 <li class="footer-menu__item footer-help">
                     <a href="../index.html">Inicio</a>
@@ -46,5 +47,9 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

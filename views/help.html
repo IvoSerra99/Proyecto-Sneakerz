@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Ayuda</title>
 </head>
@@ -27,36 +28,38 @@
         </nav>
     </header> 
     <Main class="form-consultas">
-        <h1>
-            <p class="h1-help">Hacenos tu consulta</p>
-        </h1>
-        <section class="form">
-            <form action="pepe.html" method="get" enctype="" class="nombre-apellido">
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="" required placeholder="Nombre">
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="" placeholder="Apellido (opcional)">
-            </form>
-            <form action="pepe.html" method="get" enctype="" class="consulta">   
-                <input type="text" name="Consulta" id="" required placeholder="Tu consulta">
-            </form>
-            <form action="pepe.html" method="get" enctype="" class="email-numero">
-                    <label for="email">Email</label>
-                    <input type="email" name="Email de contacto" id="" required placeholder="Email de contacto">
-                    <label for="number">Numero de contacto</label>
-                    <input type="number" name="Numero de contacto" id="" min="0" placeholder="Numero de Teléfono (opcional)">
-            </form>
-            <button type="submit">Enviar consulta</button>
-        </section>
+        <div class="form-consultas__size" data-aos="zoom-in">
+            <h1>
+                <p class="h1-help">Hacenos tu consulta</p>
+            </h1>
+            <section class="form">
+                <form action="pepe.html" method="get" enctype="" class="nombre-apellido">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="" required placeholder="Nombre">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" id="" placeholder="Apellido (opcional)">
+                </form>
+                <form action="pepe.html" method="get" enctype="" class="consulta">   
+                    <input type="text" name="Consulta" id="" required placeholder="Tu consulta">
+                </form>
+                <form action="pepe.html" method="get" enctype="" class="email-numero">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email de contacto" id="" required placeholder="Email de contacto">
+                        <label for="number">Numero de contacto</label>
+                        <input type="number" name="Numero de contacto" id="" min="0" placeholder="Numero de Teléfono (opcional)">
+                </form>
+                <button type="submit">Enviar consulta</button>
+            </section>
+        </div>
     </Main>
-    <footer class="main-footer-view">
+    <footer class="main-footer-view" data-aos="fade-up">
         <nav class="footer-view">
             <ul class="footer-menu">
                 <li class="footer-menu__item footer-contact">
-                    <a href="./views/contact.html">Contactános</a>
+                    <a href="./contact.html">Contactános</a>
                 </li>
                 <li class="footer-menu__item footer-login">
-                    <a href="./views/login.html">Iniciar Sesión</a>
+                    <a href="./login.html">Iniciar Sesión</a>
                 </li>
                 <li class="footer-menu__item footer-help">
                     <a href="../index.html">Inicio</a>
@@ -64,5 +67,9 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

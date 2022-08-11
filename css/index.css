@@ -50,6 +50,7 @@ h1 {
 .main-header__logo {
     height: 9.3em;
     width: 9.3em;
+    transition: all 1s;
 }
 .header-nav {
     display: flex;
@@ -71,6 +72,26 @@ a {
     width: 25vw;
     align-items: center;
     justify-content: center;
+}
+.header-nav .nav-links li:hover {
+    border-style: none;
+}
+.header-nav .shop-links li:hover {
+    border-style:none;
+}
+.links-item__direct:hover {
+    color: white;
+    background-color: #2b2b2b;
+    transition: all 2s;
+}
+.links-item a:hover {
+    background-color: #2b2b2b;
+    color: white;
+    transition: all 2s;
+}
+.main-header__logo:hover {
+    height: 10em;
+    width: 10em;
 }
 .nav-links {
     display: flex;
@@ -100,6 +121,10 @@ a {
     display: flex;
 }
 /*FIN HEADER*/
+.form-consultas__size {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
 .video-principal__propiedades {
     height: 400px;
     width: 100vw;
@@ -111,6 +136,7 @@ a {
     grid-template-areas: 
     ". hombres mujeres ."
     ". niños niños .";
+    margin-top: 500px;
 }
 .photos-kids {
     grid-area: niños;
@@ -159,7 +185,7 @@ a {
 }
 .footer-menu {
     display: flex;
-    width: 350px;
+    width: 35rem;
     justify-content: space-around;
 }
 .footer-view {
@@ -282,6 +308,7 @@ a {
 /*SHOPS*/
 
 .shop-scroll {
+    margin: 400px 0 400px 0;
     display: grid;
     grid-template-columns: repeat(3, 500px);
     grid-template-rows: repeat(3,500px);
