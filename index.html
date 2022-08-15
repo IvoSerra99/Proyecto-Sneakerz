@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="body-style">
+<body class="container-fluid">
     
     <header class="main-header__index">
         <div class="main-logo__title">
@@ -47,25 +48,29 @@
             </nav>
         </div>
     </header>
-    <main class="container"> 
-            <video class="video-principal__propiedades" src="./videos/video-principal.mp4" controls loop >video de zapatillas</video>
+    <main class="container text-center">
+        <div class="row">
+            <video class="video-principal__propiedades col" src="./videos/video-principal.mp4" controls loop >video de zapatillas</video>
+        </div> 
         <section id="shop-links__photos">
-            <article class="links-photos__horizontal photos-men" data-aos="fade-right">
-                <p class="photos-text">HOMBRES</p>
-                <a href="./views/shop.html">
-                        <img src="./images/hombres-shop.jpg" alt="imagen tipo enlace de compra para hombres" class="photo-size-h">
-                </a>
-            </article>
-            <article class="links-photos__horizontal photos-women" data-aos="fade-down-right">
-                <p class="photos-text photos-text__mujeres">MUJERES</p>
-                <a href="./views/shop.html">
-                    <img src="./images/mujer-shop.jpg" alt="imagen tipo enlace de compra para mujeres" class="photo-size-h">
-                </a>
-            </article>
-            <article class="link-photos photos-kids" data-aos="fade-up">
+            <div class="row">
+                <article class="links-photos__horizontal photos-men col-6" data-aos="fade-right">
+                    <p>HOMBRES</p>
+                    <a href="./views/shop.html">
+                <img src="./images/hombres-shop.jpg" alt="imagen tipo enlace de compra para hombres" class="img-fluid">
+                    </a>
+                </article>
+                <article class="links-photos__horizontal photos-women col-6" data-aos="fade-down-right">
+                    <p class="photos-text photos-text__mujeres">MUJERES</p>
+                    <a href="./views/shop.html">
+                <img src="./images/mujer-shop.jpg" alt="imagen tipo enlace de compra para mujeres" class="img-fluid">
+                    </a>
+                </article>
+            </div>        
+            <article class="link-photos photos-kids row" data-aos="fade-up">
                 <p class="photos-text photos-text__niños">NIÑOS</p>
                 <a href="./views/shop.html">
-                    <img src="./images/niños-shop.jpg" alt="imagen tipo enlace de compra para niños" class="photo-size-v">
+                    <img src="./images/niños-shop.jpg" alt="imagen tipo enlace de compra para niños" class="img-fluid">
                 </a>
             </article>
         </section>
@@ -95,5 +100,6 @@
     <script>
         AOS.init();
       </script>
+      <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

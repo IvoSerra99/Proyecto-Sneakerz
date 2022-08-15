@@ -11,9 +11,18 @@ html {
 ul {
     list-style-type: none;
 }
-.body-style {
-    background-color: #f3e7e4;
-    width: 100%;
+dl, ol, ul {
+    margin-top: 0; 
+    margin-bottom: 0rem; 
+}
+ol, ul {
+     padding-left: 0rem;
+}
+dl, ol, ul {
+    margin-top: 0; 
+    margin-bottom: 0rem;
+}
+.container-fluid {
     overflow-x: hidden;
 }
 /*FIN META*/
@@ -130,13 +139,13 @@ a {
     width: 100vw;
 }
 #shop-links__photos {
-    display: grid;
+   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     ". hombres mujeres ."
-    ". niños niños .";
-    margin-top: 500px;
+    ". niños niños .";*/
+    margin-top: 400px;
 }
 .photos-kids {
     grid-area: niños;
