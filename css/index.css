@@ -11,6 +11,9 @@ html {
 ul {
     list-style-type: none;
 }
+a:hover {
+    color: #2b2b2b; 
+}
 dl, ol, ul {
     margin-top: 0; 
     margin-bottom: 0rem; 
@@ -139,13 +142,7 @@ a {
     width: 100vw;
 }
 #shop-links__photos {
-   /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    ". hombres mujeres ."
-    ". niños niños .";*/
-    margin-top: 400px;
+    margin-top: 300px;
 }
 .photos-kids {
     grid-area: niños;
@@ -158,28 +155,18 @@ a {
     grid-area: hombres;
 }
 #section-about-us {
-    font-family: 'Roboto', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 640px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    ". question ."
-    ". answer ."
-    ". aditional .";
     gap: 15px;
+    margin: 20rem auto 15rem auto;
 }
 .h2-question {
     justify-self: center;
     font-size: 50px;
-    grid-area: question;
 }
 .h2-answer {
     font-size: 35px;
-    grid-area: answer;
 }
 .aditional-info {
     font-size: 30px;
-    grid-area: aditional;
 }
 
 /*FOOTER*/
