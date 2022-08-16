@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Ayuda</title>
@@ -27,31 +28,21 @@
             </ul>
         </nav>
     </header> 
-    <Main class="form-consultas">
-        <div class="form-consultas__size" data-aos="zoom-in">
-            <h1>
-                <p class="h1-help">Hacenos tu consulta</p>
-            </h1>
-            <section class="form">
-                <form action="pepe.html" method="get" enctype="" class="nombre-apellido">
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" name="Nombre" id="" required placeholder="Nombre">
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" name="Apellido" id="" placeholder="Apellido (opcional)">
-                </form>
-                <form action="pepe.html" method="get" enctype="" class="consulta">   
-                    <input type="text" name="Consulta" id="" required placeholder="Tu consulta">
-                </form>
-                <form action="pepe.html" method="get" enctype="" class="email-numero">
-                        <label for="email">Email</label>
-                        <input type="email" name="Email de contacto" id="" required placeholder="Email de contacto">
-                        <label for="number">Numero de contacto</label>
-                        <input type="number" name="Numero de contacto" id="" min="0" placeholder="Numero de Teléfono (opcional)">
-                </form>
-                <button type="submit">Enviar consulta</button>
-            </section>
+    <main class="container" data-aos="zoom-in">
+        <div class="form-login-m">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Cuenta Email (a donde responderemos)</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ej:correo@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Pone tu consulta acá! lo antes posible vas a recibir una respuesta de nuestro equipo.</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary">Enviar Consulta!</button>
+            </div>
         </div>
-    </Main>
+    </main>
     <footer class="main-footer-view" data-aos="fade-up">
         <nav class="footer-view">
             <ul class="footer-menu">
@@ -71,5 +62,6 @@
     <script>
         AOS.init();
       </script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

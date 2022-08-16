@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Acceso</title>
@@ -27,23 +28,50 @@
             </ul>
         </nav>
     </header> 
-    <main class="form-consultas" data-aos="zoom-out-up">
-        <section class="form-login form-consultas__size">
-            <h1 class="login">
-                <p>Iniciar Sesión/Registrarse</p>
-            </h1>
-            <form action="loginpepe.html" method="get" enctype="" class="name">
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="" required placeholder="Nombre">
-                    <label for="Contraseña">Contraseña</label>
-                    <input type="text" name="Contraseña" id="" required placeholder="Contraseña">
-            </form>
-            <a href="" class="forgot">Olvidaste tu contraseña?</a>
-            <form action="loginpepe.html" method="get" enctype="" class="login-register">
-                    <button type="submit">Iniciar Sesión</button>
-                    <button type="submit">Registrarse</button>
-            </form>
-        </section>
+    <main class="container">
+        <form class="form-login-m" data-aos="flip-left">
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-2 col-form-label">Email</label>
+              <div class="col-8">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-2 col-form-label">Contraseña</label>
+              <div class="col-8">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-2 pt-0">Marque su género</legend>
+              <div class="col-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Hombre
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Mujer
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Confirmar (obligatorio)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
     </main>
     <footer class="main-footer-view" data-aos="fade-up">
         <nav class="footer-view">
@@ -64,5 +92,6 @@
     <script>
         AOS.init();
       </script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
