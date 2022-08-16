@@ -28,6 +28,12 @@ dl, ol, ul {
 .container-fluid {
     overflow-x: hidden;
 }
+.scrolls-indicator {
+     margin-bottom: 50px;
+}
+#carouselExampleIndicators {
+    margin-top: 40px;
+}
 /*FIN META*/
 /*HEADER*/
 h1 {
@@ -492,9 +498,6 @@ a {
     }
     h1 .text-title {
         font-size: 20px;
-    }
-    .form-help h1 {
-
     }
     .main-header__view {
         padding: 1.5rem 0;
