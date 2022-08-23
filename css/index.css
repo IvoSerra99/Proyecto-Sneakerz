@@ -237,46 +237,6 @@ a {
 }
 
 /*FIN FORM CONTACT*/
-/*FORM HELP*/
-.form {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    " nombre nombre . "
-    " consulta consulta consulta "
-    " email-numero email-numero . "
-    " . boton . ";
-}   
-.nombre-apellido {
-    display: flex;
-    grid-area: nombre;
-    justify-content: center;
-}
-.consulta {
-    display: flex;
-    grid-area: consulta;
-    justify-content: center;
-}
-.email-numero {
-    display: flex;
-    grid-area: email-numero;
-    justify-content: center;
-    margin-left: 25px;
-}
-.form button {
-    display: flex;
-    grid-area: boton;
-    justify-content: center;
-}
-.form-consultas {
-    margin: 200px auto 200px auto;
-}
-.form-consultas h1 {
-    justify-content: center;
-}
-/*FIN FORM HELP*/
 /*FORM LOGIN*/
 .form-login {
     display: grid;

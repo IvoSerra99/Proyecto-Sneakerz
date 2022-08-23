@@ -1,0 +1,36 @@
+#shop-links__photos {
+    margin-top: 300px;
+    .photos-men {
+        grid-area: hombres;
+    }
+    .photos-women{
+        grid-area: mujeres;
+    }
+    .photos-kids {
+        grid-area: niños;
+        justify-self: center;
+    }
+}
+#section-about-us {
+    gap: 15px;
+    margin: 20rem auto 15rem auto;
+}
+.form-consultas__size {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+.video-principal__propiedades {
+    height: 400px;
+    width: 100vw;
+}
+
+.h2-question {
+    justify-self: center;
+    font-size: 50px;
+}
+.h2-answer {
+    font-size: 35px;
+}
+.aditional-info {
+    font-size: 30px;
+}

@@ -1,0 +1,28 @@
+.main-footer {
+    height: 15.3rem;
+    display: flex;
+    background-color: #FCD5CE;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .footer-menu {
+        display: flex;
+        width: 35rem;
+        justify-content: space-around;
+    }
+}
+.main-footer-view {
+    height: 15.3rem;
+    display: flex;
+    background-color: #FCD5CE;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .footer-view {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+    }
+}
