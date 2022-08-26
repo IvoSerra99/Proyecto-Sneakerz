@@ -79,6 +79,12 @@
         }
     }
 }
+.shop-links {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    margin-left: 8.9em;
+}
 .main-header {
     background-color: #FEC89A;
     padding: 3rem;
@@ -86,7 +92,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 .main-header__view {
     background-color: #FEC89A;
