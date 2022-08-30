@@ -1,5 +1,22 @@
 @charset "UTF-8";
 /* MISC */
+/* FUENTES */
+/*fonts*/
+.font-size__xxl {
+  font-size: 50px; }
+
+.font-size__title {
+  font-size: 30px; }
+
+.font-size__large {
+  font-size: 25px; }
+
+.font-size__medium {
+  font-size: 20px; }
+
+.font-size__small, .main-footer__business {
+  font-size: 10px; }
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
@@ -39,124 +56,6 @@ dl, ol, ul {
 
 #carouselExampleIndicators {
   margin-top: 40px; }
-
-@media (max-width: 1252px) {
-  .photo-size-h {
-    width: 40vw; }
-  .photo-size-v {
-    width: 90vw; } }
-
-@media (max-width: 1065px) {
-  .header-nav {
-    justify-content: flex-end; } }
-
-@media (max-width: 801px) {
-  .main-logo__title {
-    justify-content: space-around; }
-  .header-nav {
-    justify-content: center;
-    gap: 10px; }
-  .shop-links {
-    align-items: center; }
-  .nav-links {
-    justify-content: flex-start; }
-  .shop-links {
-    margin-left: 0; }
-  #section-about-us {
-    font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1fr 400px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: ". question ." ". answer ." ". aditional .";
-    gap: 15px; }
-  .h2-question {
-    justify-self: center;
-    font-size: 40px;
-    grid-area: question; }
-  .h2-answer {
-    font-size: 25px;
-    grid-area: answer; }
-  .aditional-info {
-    font-size: 20px;
-    grid-area: aditional; }
-  .form {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: " nombre nombre " " consulta consulta " " email-numero email-numero " " . boton "; } }
-
-@media (max-width: 655px) {
-  .header-nav {
-    gap: 0;
-    justify-content: space-evenly; } }
-
-@media (max-width: 641px) {
-  .header-nav {
-    gap: 10px;
-    justify-content: space-around; }
-  .main-logo__title {
-    margin-bottom: 10px; } }
-
-@media (max-width: 519px) {
-  .nav-end {
-    height: 15rem; }
-  #section-about-us {
-    font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1fr 300px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: ". question ." ". answer ." ". aditional .";
-    gap: 15px; }
-  .h2-question {
-    align-self: end;
-    justify-self: center;
-    font-size: 30px;
-    grid-area: question; }
-  .h2-answer {
-    font-size: 25px;
-    grid-area: answer; }
-  .aditional-info {
-    font-size: 20px;
-    grid-area: aditional; }
-  .form-consultas h1 {
-    font-size: 30px; }
-  .form-login {
-    display: grid;
-    grid-template-columns: 1fr 400px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: ". login ." ". name ." ". forgot ." ". login-register ."; }
-  .shop-scroll {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
-    grid-template-areas: " . men . " " . women . " " . kids . ";
-    justify-content: center; }
-  .login p {
-    font-size: 20px; }
-  .login {
-    width: 100vw; }
-  .form-login form {
-    width: 100vw; }
-  .form-login a {
-    width: 100vw; }
-  .main-header {
-    padding: 0; } }
-
-@media (max-width: 400px) {
-  .main-logo__title {
-    width: 360px;
-    justify-content: space-around;
-    margin-bottom: 5px; }
-  .header-nav {
-    justify-content: center;
-    width: 254px;
-    height: 150px;
-    justify-items: center; }
-  .nav-end {
-    width: 360px; }
-  h1 .text-title {
-    font-size: 20px; }
-  .main-header__view {
-    padding: 1.5rem 0; } }
 
 /* PARTIALS */
 .main-header__index {
@@ -295,8 +194,7 @@ a {
   #shop-links__photos .photos-women {
     grid-area: mujeres; }
   #shop-links__photos .photos-kids {
-    grid-area: niños;
-    justify-self: center; }
+    grid-area: niños; }
 
 #section-about-us {
   gap: 15px;
@@ -308,14 +206,106 @@ a {
 
 .h2-question {
   justify-self: center;
-  font-size: 50px; }
+  font-size: 50px;
+  background-color: #F4A261; }
 
 .h2-answer {
-  font-size: 35px; }
+  font-size: 35px;
+  background-color: #E9C46A; }
 
 .aditional-info {
-  font-size: 30px; }
+  font-size: 30px;
+  background-color: #2A9D8F; }
 
 .form-consultas__size {
   margin-top: 500px;
   margin-bottom: 500px; }
+
+@media (max-width: 1252px) {
+  .photo-size-h {
+    width: 40vw; }
+  .photo-size-v {
+    width: 90vw; } }
+
+@media (max-width: 1065px) {
+  .header-nav {
+    justify-content: flex-end; } }
+
+@media (max-width: 801px) {
+  .main-logo__title {
+    justify-content: space-around; }
+  .header-nav {
+    justify-content: center;
+    gap: 10px; }
+  .shop-links {
+    align-items: center; }
+  .nav-links {
+    justify-content: flex-start; }
+  .shop-links {
+    margin-left: 0; }
+  .h2-question {
+    justify-self: center;
+    font-size: 40px;
+    grid-area: question; }
+  .h2-answer {
+    font-size: 25px;
+    grid-area: answer; }
+  .aditional-info {
+    font-size: 20px;
+    grid-area: aditional; } }
+
+@media (max-width: 655px) {
+  .header-nav {
+    gap: 0;
+    justify-content: space-evenly; } }
+
+@media (max-width: 641px) {
+  .header-nav {
+    gap: 10px;
+    justify-content: space-around; }
+  .main-logo__title {
+    margin-bottom: 10px; } }
+
+@media (max-width: 519px) {
+  .nav-end {
+    height: 15rem; }
+  .h2-question {
+    align-self: end;
+    justify-self: center;
+    font-size: 30px;
+    grid-area: question; }
+  .h2-answer {
+    font-size: 25px;
+    grid-area: answer; }
+  .aditional-info {
+    font-size: 20px;
+    grid-area: aditional; }
+  .form-consultas h1 {
+    font-size: 30px; }
+  .login p {
+    font-size: 20px; }
+  .login {
+    width: 100vw; }
+  .form-login form {
+    width: 100vw; }
+  .form-login a {
+    width: 100vw; }
+  .main-header {
+    padding: 0; } }
+
+@media (max-width: 400px) {
+  .main-logo__title {
+    width: 360px;
+    justify-content: space-around;
+    margin-bottom: 5px; }
+  .header-nav {
+    justify-content: center;
+    width: 254px;
+    height: 150px;
+    justify-items: center; }
+  .nav-end {
+    width: 360px; }
+  h1 .text-title {
+    font-size: 20px; }
+  .main-header__view {
+    padding: 1.5rem 0; } }

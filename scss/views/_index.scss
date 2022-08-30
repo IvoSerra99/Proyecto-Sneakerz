@@ -8,7 +8,6 @@
     }
     .photos-kids {
         grid-area: niños;
-        justify-self: center;
     }
 }
 #section-about-us {
@@ -16,17 +15,18 @@
     margin: 20rem auto 15rem auto;
 }
 .video-principal__propiedades {
-    height: 400px;
-    width: 100vw;
+    @include size (400px, 100vw)
 }
-
 .h2-question {
     justify-self: center;
     font-size: 50px;
+    background-color: $primary;
 }
 .h2-answer {
     font-size: 35px;
+    background-color: $secondary;
 }
 .aditional-info {
-    font-size: 30px;
+    font-size: map-get($font-size , title);
+    background-color: $buttons;
 }

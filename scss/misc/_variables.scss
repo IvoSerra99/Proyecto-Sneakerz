@@ -1,0 +1,33 @@
+/* FUENTES */
+$primary: #F4A261;
+$primary-soft:#FEC89A;
+$secondary: #E9C46A;
+$buttons: #2A9D8F; 
+
+$colors: (
+    primary: #F4A261,
+    primary-soft:#FEC89A,
+    secondary: #E9C46A,
+    buttons: #2A9D8F
+);
+/*fonts*/
+$font-size: (
+    xxl: 50px,
+    title: 30px,
+    large: 25px,
+    medium: 20px,
+    small: 10px
+);
+@each $text, $size in $font-size {
+    .font-size__#{$text} {
+        font-size: #{$size};
+    }
+}
+@mixin size ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+
+
+

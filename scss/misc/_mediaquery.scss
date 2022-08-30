@@ -28,16 +28,6 @@
     .shop-links {
         margin-left: 0;
     }  
-    #section-about-us {
-        font-family: 'Roboto', sans-serif;
-        grid-template-columns: 1fr 400px 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        ". question ."
-        ". answer ."
-        ". aditional .";
-        gap: 15px;
-    }
     .h2-question {
         justify-self: center;
         font-size: 40px;
@@ -51,17 +41,6 @@
         font-size: 20px;
         grid-area: aditional;
     }
-    .form {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        " nombre nombre "
-        " consulta consulta "
-        " email-numero email-numero "
-        " . boton ";
-    }   
 }
 @media (max-width:655px) {
     .header-nav {
@@ -82,16 +61,6 @@
     .nav-end {
         height: 15rem;
     }
-    #section-about-us {
-        font-family: 'Roboto', sans-serif;
-        grid-template-columns: 1fr 300px 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        ". question ."
-        ". answer ."
-        ". aditional .";
-        gap: 15px;
-    }
     .h2-question {
         align-self: end;
         justify-self: center;
@@ -109,26 +78,7 @@
     .form-consultas h1 {
         font-size: 30px;
     }
-    .form-login {
-        display: grid;
-        grid-template-columns: 1fr 400px 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        ". login ."
-        ". name ."
-        ". forgot ."
-        ". login-register .";
-    }
-    .shop-scroll {
-        display: grid;
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows: repeat(3,300px);
-        grid-template-areas: 
-        " . men . "
-        " . women . "
-        " . kids . ";
-        justify-content: center;
-    }
+
     .login p {
         font-size: 20px;
     }
