@@ -12,7 +12,7 @@
     }
 }
 @media (max-width:801px) {
-    .main-logo__title {
+    .main-header__index .main-logo__title {
         justify-content: space-around;
     }
     .header-nav {
@@ -53,7 +53,7 @@
         gap: 10px;
         justify-content: space-around;
     }
-    .main-logo__title {
+    .main-header__index .main-logo__title {
         margin-bottom: 10px;
     }
 }
@@ -97,7 +97,7 @@
 }
 
 @media (max-width:400px) {
-    .main-logo__title {
+    .main-header__index .main-logo__title {
         width: 360px;
         justify-content: space-around;
         margin-bottom: 5px;
