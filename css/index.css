@@ -51,12 +51,6 @@ dl, ol, ul {
 .container-fluid {
   overflow-x: hidden; }
 
-.scrolls-indicator {
-  margin-bottom: 50px; }
-
-#carouselExampleIndicators {
-  margin-top: 40px; }
-
 /* PARTIALS */
 .main-header__index {
   background-color: #FEC89A;
@@ -187,6 +181,17 @@ a {
   justify-content: space-around; }
 
 /* VIEWS */
+.container-text__shop {
+  color: #E9C46A;
+  font-family: 'Roboto', sans-serif; }
+
+.h2-shop {
+  background: rgba(1, 1, 1, 0.5);
+  margin: 1rem 0 1rem 0; }
+
+#carouselExampleIndicators-2 {
+  margin-bottom: 1rem; }
+
 #shop-links__photos {
   margin-top: 300px; }
   #shop-links__photos .photos-men {
@@ -228,13 +233,13 @@ a {
     width: 90vw; } }
 
 @media (max-width: 1065px) {
-  .main-header__index .header-nav {
+  .nav-end .header-nav {
     justify-content: flex-end; } }
 
 @media (max-width: 801px) {
   .main-header__index .main-logo__title {
     justify-content: space-around; }
-  .main-header__index .header-nav {
+  .nav-end .header-nav {
     justify-content: center;
     gap: 10px; }
   .nav-end .header-nav .shop-links {
@@ -255,12 +260,12 @@ a {
     grid-area: aditional; } }
 
 @media (max-width: 655px) {
-  .main-header__index .header-nav {
+  .nav-end .header-nav {
     gap: 0;
     justify-content: space-evenly; } }
 
 @media (max-width: 641px) {
-  .main-header__index .header-nav {
+  .nav-end .header-nav {
     gap: 10px;
     justify-content: space-around; }
   .main-header__index .main-logo__title {
@@ -298,7 +303,7 @@ a {
     width: 360px;
     justify-content: space-around;
     margin-bottom: 5px; }
-  .main-header__index .header-nav {
+  .nav-end .header-nav {
     justify-content: center;
     width: 254px;
     height: 150px;
