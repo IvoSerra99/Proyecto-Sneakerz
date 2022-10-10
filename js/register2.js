@@ -1,6 +1,7 @@
 const nombre = "pepito"
 const contrasenia = "juarez123"
 const email = "juanp123@gmail.com"
+console.log("datos a rellenar :\n"+"nombre: "+nombre+"\ncontraseña: "+contrasenia+"\nemail: "+email)
 let cambiarDatos = true
 
 function DatosUsuario () {

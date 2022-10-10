@@ -1,0 +1,4 @@
+datos a rellenar:
+nombre: pepito
+contraseña: juarez123
+email: juanp123@gmail.com
