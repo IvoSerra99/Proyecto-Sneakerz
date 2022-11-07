@@ -17,6 +17,12 @@ const productos = [deHombre,deMujer];
 //Array carrito
 let carrito = [];
 
+//cargar carrito desde localstorage
+
+if(localStorage.getItem("carrito")){
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+}
+
 const almacenamientoProductos = document.getElementById("almacenamientoProductos");
 
 const productosVisibles = () => {
@@ -37,7 +43,7 @@ const productosVisibles = () => {
 
         const productoSumado = document.getElementById(`boton ${producto.id}`)
         productoSumado.addEventListener("click", () =>{
-            aniadirAlCarrito(productos.id)
+            aniadirAlCarrito(producto.id)
         })
         
     })
@@ -50,9 +56,12 @@ const aniadirAlCarrito = (id) => {
     if(chequeoEnCarrito){
         chequeoEnCarrito.cuanto++;
     }else{
-        carrito.push(chequeo)
+        carrito.push(chequeo);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
     }
+    calculoDelTotal()
 }
+
 productosVisibles ()
 
 const contenedorCarrito = document.getElementById ("contenedorCarrito")
@@ -83,8 +92,32 @@ const mostrarCarrito = () => {
 
         })
     })
+    calculoDelTotal()
 }
 
 const borrarDelCarrito = (id) => {
+    const productoBorrar = carrito.find((producto) => producto.id === id );
+    const indice = carrito.indexOf (productoBorrar);
+    carrito.splice(indice, 1);
+    mostrarCarrito()
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
 
+//
+const eliminarCarritoCompleto = document.getElementById("eliminarCarrito");
+eliminarCarritoCompleto.addEventListener("click", () => {
+    eliminarCarritoCompletamente()
+})
+const eliminarCarritoCompletamente = () => {
+    carrito = [];
+    mostrarCarrito();
+    localStorage.clear();
+}
+const total = document.getElementById("total")
+const calculoDelTotal = () => {
+    let compraTotal = 0;
+    carrito.forEach((producto) => {
+        compraTotal += producto.precio * producto.cantidad
+    })
+    total.innerHTML = `total: $${compraTotal}`
 }
