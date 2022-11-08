@@ -7,17 +7,17 @@ class Zapatilla {
     this.cuanto = 1;
     }
 }
-const deHombre = new Zapatilla (1,"Fila",15.000,"../images/hombres-shop.jpg");
-const deMujer = new Zapatilla (2,"So Sport",17.000,"../images/mujer-shop.jpg");
+const deHombre = new Zapatilla (1,"Fila",15000,"../images/hombres-shop.jpg");
+const deMujer = new Zapatilla (2,"So Sport",17000,"../images/mujer-shop.jpg");
 
-//Array productos
+
 
 const productos = [deHombre,deMujer];
 
-//Array carrito
+
 let carrito = [];
 
-//cargar carrito desde localstorage
+
 
 if(localStorage.getItem("carrito")){
     carrito = JSON.parse(localStorage.getItem("carrito"));
