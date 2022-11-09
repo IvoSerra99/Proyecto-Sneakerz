@@ -117,7 +117,7 @@ const total = document.getElementById("total")
 const calculoDelTotal = () => {
     let compraTotal = 0;
     carrito.forEach((producto) => {
-        compraTotal += producto.precio * producto.cantidad
+        compraTotal += producto.precio * producto.cuanto
     })
     total.innerHTML = `total: $${compraTotal}`
 }
