@@ -43,6 +43,12 @@ const productosVisibles = () => {
 
         const productoSumado = document.getElementById(`boton ${producto.id}`)
         productoSumado.addEventListener("click", () =>{
+            Toastify({
+                text: "Su producto fue agregado exitosamente",
+                duration: 2000,
+                gracity:"top",
+                position: "right",
+            }).showToast();
             aniadirAlCarrito(producto.id)
         })
         
@@ -67,7 +73,33 @@ productosVisibles ()
 const contenedorCarrito = document.getElementById ("contenedorCarrito")
 const verCarrito = document.getElementById ("chequearCarrito")
 verCarrito.addEventListener("click", () => {
+    let timerInterval
+Swal.fire({
+  title: 'Cargando su carrito!',
+  html: 'Su carrito se mostrará en <b></b> millisegundos.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+  
+})
+setTimeout(() => {
     mostrarCarrito()
+}, 2000)
+
 })
 const mostrarCarrito = () => {
     contenedorCarrito.innerHTML="";
@@ -88,6 +120,13 @@ const mostrarCarrito = () => {
         contenedorCarrito.appendChild(card);
         const productoRestado = document.getElementById(`eliminar${producto.id}`)
         productoRestado.addEventListener("click", () =>{
+            Toastify({
+                text: "Producto eliminado exitosamente !",
+                gravity: "bottom",
+                duration: 2000,
+                position: "right",
+            }).showToast();
+            
             borrarDelCarrito(producto.id)
 
         })
@@ -106,6 +145,11 @@ const borrarDelCarrito = (id) => {
 //
 const eliminarCarritoCompleto = document.getElementById("eliminarCarrito");
 eliminarCarritoCompleto.addEventListener("click", () => {
+    Swal.fire ({
+        title: "Su carrito fue eliminado exitosamente!",
+        icon: "success"
+
+    })
     eliminarCarritoCompletamente()
 })
 const eliminarCarritoCompletamente = () => {
