@@ -56,7 +56,7 @@ fetch(productos)
             aniadirAlCarrito(producto.id)
         })
         const aniadirAlCarrito = (id) => {
-            const chequeo = productos.find((producto) => producto.id === id);
+            const chequeo = datos.find((producto) => producto.id === id);
             const chequeoEnCarrito = carrito.find((producto) => producto.id === id);
             if(chequeoEnCarrito){
                 chequeoEnCarrito.cuanto++;

@@ -1,4 +1,4 @@
 [
-    {"id": 1, "nombre": "Fila" , "precio": 15000, "imagen": "../images/hombres-shop.jpg"},
-    {"id": 2, "nombre": "So Sport" , "precio": 17000, "imagen": "../images/mujer-shop.jpg"}
+    {"id": 1, "nombre": "Fila" , "precio": 15000, "imagen": "../images/hombres-shop.jpg", "cuanto": 1},
+    {"id": 2, "nombre": "So Sport" , "precio": 17000, "imagen": "../images/mujer-shop.jpg", "cuanto": 1}
 ]
