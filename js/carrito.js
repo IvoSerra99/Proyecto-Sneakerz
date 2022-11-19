@@ -12,7 +12,7 @@ const deMujer = new Zapatilla (2,"So Sport",17000,"../images/mujer-shop.jpg");
 
 
 
-const productos = [deHombre,deMujer];
+const productos = "../json/productos.json";
 
 
 let carrito = [];
@@ -25,8 +25,11 @@ if(localStorage.getItem("carrito")){
 
 const almacenamientoProductos = document.getElementById("almacenamientoProductos");
 
-const productosVisibles = () => {
-    productos.forEach((producto) => {
+
+fetch(productos)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+     datos.forEach(producto => {
         const card = document.createElement("div");
         card.classList.add("col-xl-3","col-md-6","col-xs-12");
         card.innerHTML = `
@@ -36,11 +39,12 @@ const productosVisibles = () => {
                 <h5 class= "text-center">${producto.nombre}</h5>
                 <p class= "text-center">${producto.precio}</p>
                 <button class="btn btn-primary " id="boton ${producto.id}"> Agregar al carrito </button>
+                <button class="btn btn-primary " id="boton cotizacionDolar"> Precio a dolar blue </button>
                 <div>
             </div>
         `
         almacenamientoProductos.appendChild(card);
-
+            
         const productoSumado = document.getElementById(`boton ${producto.id}`)
         productoSumado.addEventListener("click", () =>{
             Toastify({
@@ -51,24 +55,22 @@ const productosVisibles = () => {
             }).showToast();
             aniadirAlCarrito(producto.id)
         })
-        
+        const aniadirAlCarrito = (id) => {
+            const chequeo = productos.find((producto) => producto.id === id);
+            const chequeoEnCarrito = carrito.find((producto) => producto.id === id);
+            if(chequeoEnCarrito){
+                chequeoEnCarrito.cuanto++;
+            }else{
+                carrito.push(chequeo);
+                localStorage.setItem("carrito", JSON.stringify(carrito));
+            }
+            calculoDelTotal()
+        }
     })
+})
+.catch(error => console.log(error))
+    
 
-}
-
-const aniadirAlCarrito = (id) => {
-    const chequeo = productos.find((producto) => producto.id === id);
-    const chequeoEnCarrito = carrito.find((producto) => producto.id === id);
-    if(chequeoEnCarrito){
-        chequeoEnCarrito.cuanto++;
-    }else{
-        carrito.push(chequeo);
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-    }
-    calculoDelTotal()
-}
-
-productosVisibles ()
 
 const contenedorCarrito = document.getElementById ("contenedorCarrito")
 const verCarrito = document.getElementById ("chequearCarrito")
@@ -165,3 +167,5 @@ const calculoDelTotal = () => {
     })
     total.innerHTML = `total: $${compraTotal}`
 }
+
+console.log(productos)
